@@ -1,5 +1,5 @@
 // 이 파일은 생성물입니다. 고치지 말고 ko.ts를 고친 뒤 `npm run i18n`을 실행하세요.
-// ko.ts sha256: 3be3631ca5924e73
+// ko.ts sha256: 4f9205b3ca77c078
 import type { ko } from "./ko";
 
 export const zh: typeof ko = {
@@ -11,10 +11,6 @@ export const zh: typeof ko = {
     close: "关闭",
     cancel: "消除",
     translationUnavailable: "由于无法连接到翻译服务，因此我们显示的是原文（韩语）。",
-    timeAgo: {
-      justNow: "现在",
-      minutesAgo: (n: number) => `0 分钟前`,
-    },
     lastUpdated: (value: string) => `最后更新时间：${value}`,
   },
   nav: {
@@ -26,7 +22,6 @@ export const zh: typeof ko = {
   },
   home: {
     quickMenu: {
-      coursePlan: "定制课程",
       aiGuide: "AI 向导",
       schedule: "完整日程",
       map: "地图和设施",
@@ -42,7 +37,6 @@ export const zh: typeof ko = {
     greetingAfternoon: "这是一个宜人的下午。",
     greetingEvening: "这是一个热闹的夜晚。",
     greetingSuffix: "访客",
-    festivalLoading: "正在加载节日信息……",
     aiCta: "获取人工智能今日课程推荐",
     congestionTitle: "实时拥堵",
     mapLink: "查看地图",
@@ -52,7 +46,6 @@ export const zh: typeof ko = {
   map: {
     title: "数字地图 · 设施信息",
     subtitle: "查看已注册的节日摊位、设施和交通信息。",
-    mockBadge: "地图模型（演示图像）",
     tabs: { facility: "便利设施", crowd: "拥塞", transport: "交通" },
     transportNotice: "交通信息仅供参考，因为我们尚未集成外部交通 API。",
     facilityOpen: "运行中",
@@ -73,15 +66,8 @@ export const zh: typeof ko = {
     title: "本地商家优惠券 · 积分",
     subtitle: "从参与活动的商家处领取优惠券，并查看您的ESG积分。",
     pointsLabel: "我的ESG积分",
-    pointsHelper: (n: number) => `获得积分 ${n}`,
-    availableTitle: "可发放的优惠券",
-    availableEmpty: "目前没有可用的优惠券。",
-    myTitle: "我的优惠券",
-    myEmpty: "我没有收到优惠券。",
-    issueButton: "获取签发",
     remaining: (n: number) => `剩余 0 页`,
     validUntil: (date: string) => `最多 ${date}`,
-    redeemNotice: "优惠券需经店员核实后方可使用。",
     status: { ISSUED: "可用的", REDEEMED: "用过的", EXPIRED: "截止日期", CANCELLED: "取消" } as Record<string, string>,
   },
   nearby: {
@@ -150,9 +136,6 @@ export const zh: typeof ko = {
     subtitle: "这是官方批准的节目日程表。",
   },
   stampTour: {
-    couponsTitle: "本地商业区电子优惠券",
-    couponsLink: "打开优惠券盒",
-    emptyCoupons: "您尚未收到任何优惠券。请从您的优惠券盒中领取一张。",
     title: "邮票之旅",
     subtitle: "收集印章即可获得ESG积分。",
     collectionSubLabel: "集邮",
@@ -163,9 +146,6 @@ export const zh: typeof ko = {
     scanButton: "扫描二维码",
     scanHint: "扫描现场信息板上的二维码即可获得印章。如果您无法使用相机，请手动输入信息板上的二维码。",
     codeLabel: "直接输入邮票代码",
-    pointsTitle: "赚取积分",
-    pointsBalance: "当前余额",
-    pointsEmpty: "我目前还没有任何积分。",
     pointsLabel: "我的ESG积分",
     pointsHistoryLink: "积分",
     collectedCount: (collected: number, total: number) => `${collected}/${total} 已完成`,
@@ -242,18 +222,9 @@ export const zh: typeof ko = {
   kioskAssist: {
     consentTitle: "您需要我放大屏幕上的文字吗？",
     consentDescription: "我们会简单检查一下摄像头，并建议合适的字体大小。即使您不使用此功能，您仍然可以使用所有其他功能。",
-    consentAccept: "用摄像头查看",
     consentDecline: "没关系，我用就行了。",
-    manualLargeText: "用大字写着",
     checking: "检查...",
-    noticeOnDevice: "验证过程仅在此自助服务终端内进行，照片不会发送到外部。",
-    noticeDiscard: "视频和面部信息不会被保存，验证后会立即删除。",
-    noticeNoIdentity: "我们不会核实其身份，也不会将其用于定价或资格审查。",
-    noticeOptional: "即使不使用摄像头，您也可以通过下面的按钮开启大字体显示。",
-    suggestTitle: "您想查看大字体版本吗？",
-    suggestDescription: "我会把文字和按钮放大。屏幕保持现在的样子就可以了。",
     suggestAccept: "以大字体查看",
-    suggestDecline: "我现在喜欢它了。",
   },
   complaint: {
     ariaLabel: "提交民事诉讼",
@@ -289,23 +260,12 @@ export const zh: typeof ko = {
     reservationCallTitle: "预定通话",
     reservationCallLink: "查看预订记录",
     ticketCall: (n: number) => `0号，轮到你进入了。`,
-    locationSuffix: "请出示您的号码牌。",
     emptyReservationCalls: "目前没有预订记录。",
     noticesTitle: "公告",
     emptyNotices: "目前没有张贴任何通知。",
     fallbackTicketLabel: "预订",
     emergencyBadge: "紧急情况",
     emergencyDismissAria: "紧急通知",
-  },
-  congestion: {
-    level: {
-      여유: "空闲的",
-      보통: "通常",
-      혼잡: "困惑",
-    } as Record<string, string>,
-    avgWait: (n: number) => `平均等待时间 ${n} 分钟`,
-    noWait: "无需等待",
-    updatedPrefix: "更新",
   },
   aiGuide: {
     answerFreshness: (value: string) => `指南 · ${value}`,
@@ -321,7 +281,6 @@ export const zh: typeof ko = {
     imageAlt: "艾伦人工智能节指南 数字人示例",
     voiceReadyBadge: "语音导航已准备就绪",
     resetAria: "刷新对话",
-    recognizedQuestionPrefix: "已识别的问题",
     assistantLabel: "Alan AI",
     sourcePrefix: "来源 ·",
     micStopAria: "停止语音识别",
@@ -354,15 +313,6 @@ export const zh: typeof ko = {
     reportDone: "请求审查",
     reportFailed: "我们未能收到该报告。",
     replies: {
-      congestion: (zone: string, minutes: number) =>
-        `目前，${zone} 区域最为拥挤。平均等待时间为 ${minutes} 分钟，因此我们建议您先在人流较少的区域寻找位置。`,
-      congestionSource: "实时拥堵数据",
-      transportLine: (mode: string, label: string, status: string) => `${mode} · ${label} (${status})`,
-      transportSource: "运营审批交通信息",
-      facilityLine: (name: string, location: string, minutes: number) => `步行 0、1、2 分钟`,
-      facilitySource: "设施审批数据",
-      scheduleLine: (time: string, title: string, stage: string) => `${time} · ${title} (${stage})`,
-      scheduleSource: "已批准的节日活动日程",
       fallback: "如果您选择以下您预期会遇到的问题，我们将根据节庆活动运营数据立即为您提供指导。",
     },
     errors: {
@@ -394,16 +344,8 @@ export const zh: typeof ko = {
     issueFailed: "我没有收到优惠券。",
     qrAlt: (store: string) => `${store} 扫描二维码使用优惠券`,
     qrHelper: "请向店员出示二维码。如果无法识别，请提供以下代码。",
-    redeemAction: "使用情况处理",
-    redeemPending: "加工…",
-    redeemFailed: "使用情况处理失败。",
-    redeemConfirmTitle: "您要处理优惠券的使用吗？",
-    redeemConfirmDescription: "请在得到店员确认后按下按钮。操作一旦完成，将无法撤销。",
-    redeemConfirmAction: "进程使用",
-    usedAtLine: (value: string) => `${value} 已使用完毕`,
     expiredLine: "这是一张过期优惠券。",
     expiresLine: (date: string) => `最多可有 ${date}`,
-    offerMeta: (location: string, expires: string) => `最多 ${location} · ${expires}`,
     status: {
       ISSUED: "可用的",
       REDEEMED: "用过的",
@@ -516,39 +458,6 @@ export const zh: typeof ko = {
       empty: "我目前还没有任何积分。",
       reusableReason: (rentalCode: string) => `返回可重复使用的容器 · ${rentalCode}`,
     },
-  },
-  coursePlan: {
-    title: "个性化课程推荐",
-    subtitle: "我们将根据您的同伴、兴趣和停留时间，使用经批准的课程定制课程。",
-    visitorTypeLabel: "你和谁一起来的？",
-    visitorTypes: {
-      solo: "独自的",
-      couple: "情人",
-      friends: "朋友",
-      family: "家庭",
-      senior: "由老年人陪同",
-    } as Record<string, string>,
-    interestLabel: "感兴趣的事物（可多选）",
-    interests: {
-      performance: "表现",
-      experience: "经验",
-      exhibition: "展示",
-      food: "普德",
-      esg: "环保 · ESG",
-    } as Record<string, string>,
-    interestRequired: "请选择一项或多项兴趣。",
-    stayMinutesLabel: "是时候留下了",
-    stayMinutesOption: (minutes: number) => (minutes >= 60 ? `${minutes / 60} 小时` : `0分钟`),
-    accessibilityLabel: "行动不便人士课程",
-    accessibilityHelper: "我们将引导您沿着坡度和台阶最少的路线行进。",
-    submit: "获取课程推荐",
-    submitting: "课程规划……",
-    failed: "没有人给我推荐课程。",
-    resultTitle: "推荐课程",
-    totalMinutes: (minutes: number) => `总计 ${minutes} 分钟`,
-    generatedAt: (value: string) => `推荐标准 · ${value}`,
-    stopMinutes: (minutes: number) => `0分钟`,
-    emptyResult: "我们找不到符合条件的课程。请修改条件后重试。",
   },
   festivalData: {
     category: {

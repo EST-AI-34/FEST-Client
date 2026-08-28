@@ -1,5 +1,5 @@
 // 이 파일은 생성물입니다. 고치지 말고 ko.ts를 고친 뒤 `npm run i18n`을 실행하세요.
-// ko.ts sha256: 3be3631ca5924e73
+// ko.ts sha256: 4f9205b3ca77c078
 import type { ko } from "./ko";
 
 export const en: typeof ko = {
@@ -11,10 +11,6 @@ export const en: typeof ko = {
     close: "close",
     cancel: "cancellation",
     translationUnavailable: "We were unable to connect to the translation service, so we are displaying the original text (Korean).",
-    timeAgo: {
-      justNow: "Just now",
-      minutesAgo: (n: number) => `${n} minutes ago`,
-    },
     lastUpdated: (value: string) => `Last updated · ${value}`,
   },
   nav: {
@@ -26,7 +22,6 @@ export const en: typeof ko = {
   },
   home: {
     quickMenu: {
-      coursePlan: "Customized Course",
       aiGuide: "AI Guide",
       schedule: "Full schedule",
       map: "Maps and Facilities",
@@ -42,7 +37,6 @@ export const en: typeof ko = {
     greetingAfternoon: "It's a pleasant afternoon.",
     greetingEvening: "It's a lively evening.",
     greetingSuffix: ", Visitor",
-    festivalLoading: "Loading festival information...",
     aiCta: "Get today's course recommendation from AI",
     congestionTitle: "Real-time congestion",
     mapLink: "View Map",
@@ -52,7 +46,6 @@ export const en: typeof ko = {
   map: {
     title: "Digital Map · Facility Information",
     subtitle: "Check the registered festival booths, facilities, and transportation information.",
-    mockBadge: "Map mockup (demo image)",
     tabs: { facility: "Amenities", crowd: "Congestion", transport: "traffic" },
     transportNotice: "The traffic information is for reference only, as we have not yet integrated an external traffic API.",
     facilityOpen: "In operation",
@@ -73,15 +66,8 @@ export const en: typeof ko = {
     title: "Local Business Coupons · Points",
     subtitle: "Get coupons from festival participating companies and check your ESG points.",
     pointsLabel: "My ESG points",
-    pointsHelper: (n: number) => `Points earned ${n}`,
-    availableTitle: "Coupons available for issuance",
-    availableEmpty: "There are no coupons available right now.",
-    myTitle: "My coupon",
-    myEmpty: "I don't have a coupon issued.",
-    issueButton: "Get issued",
     remaining: (n: number) => `${n} pages remaining`,
     validUntil: (date: string) => `Up to ${date}`,
-    redeemNotice: "The coupon will be processed for use after being verified by a store employee.",
     status: { ISSUED: "Available", REDEEMED: "Used", EXPIRED: "Expiration date", CANCELLED: "Cancelled" } as Record<string, string>,
   },
   nearby: {
@@ -150,9 +136,6 @@ export const en: typeof ko = {
     subtitle: "This is the approved official program schedule.",
   },
   stampTour: {
-    couponsTitle: "Local commercial district digital coupons",
-    couponsLink: "Open Coupon Box",
-    emptyCoupons: "You haven't received any coupons yet. Please get one from your coupon box.",
     title: "Stamp Tour",
     subtitle: "Collect stamps to earn ESG points.",
     collectionSubLabel: "Stamp collection",
@@ -163,9 +146,6 @@ export const en: typeof ko = {
     scanButton: "Scan QR",
     scanHint: "Scan the QR code on the on-site information board to get a stamp. If you cannot use a camera, please enter the code on the board manually.",
     codeLabel: "Enter stamp code directly",
-    pointsTitle: "Earn points",
-    pointsBalance: "Current balance",
-    pointsEmpty: "I don't have any points accumulated yet.",
     pointsLabel: "My ESG points",
     pointsHistoryLink: "Points",
     collectedCount: (collected: number, total: number) => `${collected}/${total} completed`,
@@ -242,18 +222,9 @@ export const en: typeof ko = {
   kioskAssist: {
     consentTitle: "Would you like me to enlarge the text on the screen?",
     consentDescription: "We'll briefly check with the camera and suggest the appropriate font size. You can still use all features even if you don't use it.",
-    consentAccept: "Check with camera",
     consentDecline: "It's okay, I'll just use it.",
-    manualLargeText: "Right in large letters",
     checking: "Checking...",
-    noticeOnDevice: "Verification takes place only within this kiosk, and the photo does not go outside.",
-    noticeDiscard: "Video and facial information is not saved and is deleted immediately after verification.",
-    noticeNoIdentity: "We do not verify who it is, nor do we use it for pricing or eligibility.",
-    noticeOptional: "You can turn on large text with the button below even without using the camera.",
-    suggestTitle: "Would you like to see it in large font?",
-    suggestDescription: "I will show the text and buttons larger. It is fine to leave the screen as it is now.",
     suggestAccept: "View in large font",
-    suggestDecline: "I like it now.",
   },
   complaint: {
     ariaLabel: "Submission of civil complaint",
@@ -289,23 +260,12 @@ export const en: typeof ko = {
     reservationCallTitle: "Scheduled call",
     reservationCallLink: "View reservation history",
     ticketCall: (n: number) => `Number 0, it's your turn to enter.`,
-    locationSuffix: "Please show your number ticket.",
     emptyReservationCalls: "There are currently no booked reservations.",
     noticesTitle: "announcement",
     emptyNotices: "There are currently no posted notices.",
     fallbackTicketLabel: "reservation",
     emergencyBadge: "emergency",
     emergencyDismissAria: "Close Urgent Notice",
-  },
-  congestion: {
-    level: {
-      여유: "spare",
-      보통: "commonly",
-      혼잡: "confusion",
-    } as Record<string, string>,
-    avgWait: (n: number) => `Average wait time ${n} minutes`,
-    noWait: "No waiting",
-    updatedPrefix: "Update",
   },
   aiGuide: {
     answerFreshness: (value: string) => `Guidelines · ${value}`,
@@ -321,7 +281,6 @@ export const en: typeof ko = {
     imageAlt: "Alan AI Festival Guide Digital Human Example",
     voiceReadyBadge: "Voice guidance ready",
     resetAria: "Refresh conversation",
-    recognizedQuestionPrefix: "Recognized questions ·",
     assistantLabel: "Alan AI",
     sourcePrefix: "Source ·",
     micStopAria: "Stop voice recognition",
@@ -354,15 +313,6 @@ export const en: typeof ko = {
     reportDone: "Review requested",
     reportFailed: "We were unable to receive the report.",
     replies: {
-      congestion: (zone: string, minutes: number) =>
-        `Currently, ${zone} is the most crowded. The average wait is ${minutes} minutes, so we recommend looking around the less crowded areas first.`,
-      congestionSource: "Real-time congestion data",
-      transportLine: (mode: string, label: string, status: string) => `${mode} · ${label} (${status})`,
-      transportSource: "Operation approval traffic information",
-      facilityLine: (name: string, location: string, minutes: number) => `${name} · ${location}, ${minutes} minutes on foot`,
-      facilitySource: "Facility approval data",
-      scheduleLine: (time: string, title: string, stage: string) => `${time} · ${title} (${stage})`,
-      scheduleSource: "Approved festival program schedule",
       fallback: "If you select an anticipated question below, we will provide you with immediate guidance based on festival operation data.",
     },
     errors: {
@@ -394,16 +344,8 @@ export const en: typeof ko = {
     issueFailed: "I didn't receive a coupon.",
     qrAlt: (store: string) => `${store} QR code to use coupon`,
     qrHelper: "Please show the QR code to the store staff. If it is not recognized, please provide the code below.",
-    redeemAction: "Usage processing",
-    redeemPending: "Processing…",
-    redeemFailed: "Failed to process usage.",
-    redeemConfirmTitle: "Would you like to process the coupon usage?",
-    redeemConfirmDescription: "Please press after confirmation from a store employee. Once processed, it cannot be reversed.",
-    redeemConfirmAction: "Process usage",
-    usedAtLine: (value: string) => `${value} Used complete`,
     expiredLine: "This is an expired coupon.",
     expiresLine: (date: string) => `Available up to ${date}`,
-    offerMeta: (location: string, expires: string) => `Up to ${location} · ${expires}`,
     status: {
       ISSUED: "Available",
       REDEEMED: "Used",
@@ -516,39 +458,6 @@ export const en: typeof ko = {
       empty: "I don't have any points accumulated yet.",
       reusableReason: (rentalCode: string) => `Return reusable container · ${rentalCode}`,
     },
-  },
-  coursePlan: {
-    title: "Customized Course Recommendation",
-    subtitle: "We will customize a course using approved programs tailored to your companions, interests, and length of stay.",
-    visitorTypeLabel: "Who did you come with?",
-    visitorTypes: {
-      solo: "alone",
-      couple: "lover",
-      friends: "friend",
-      family: "family",
-      senior: "Accompanied by seniors",
-    } as Record<string, string>,
-    interestLabel: "Things of interest (select multiple)",
-    interests: {
-      performance: "performance",
-      experience: "experience",
-      exhibition: "display",
-      food: "pood",
-      esg: "Eco-friendly · ESG",
-    } as Record<string, string>,
-    interestRequired: "Please select one or more interests.",
-    stayMinutesLabel: "Time to stay",
-    stayMinutesOption: (minutes: number) => (minutes >= 60 ? `${minutes / 60} hours` : `${minutes} minutes`),
-    accessibilityLabel: "Course for the Mobility Impaired",
-    accessibilityHelper: "We guide you along a route with minimal slopes and stairs.",
-    submit: "Get course recommendations",
-    submitting: "Planning the course…",
-    failed: "I wasn't recommended a course.",
-    resultTitle: "Recommended Course",
-    totalMinutes: (minutes: number) => `Total ${minutes} minutes`,
-    generatedAt: (value: string) => `Recommendation Criteria · ${value}`,
-    stopMinutes: (minutes: number) => `${minutes} minutes`,
-    emptyResult: "We could not find a course that meets the conditions. Please change the conditions and try again.",
   },
   festivalData: {
     category: {

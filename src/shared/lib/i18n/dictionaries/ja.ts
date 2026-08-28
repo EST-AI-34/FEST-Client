@@ -1,5 +1,5 @@
 // 이 파일은 생성물입니다. 고치지 말고 ko.ts를 고친 뒤 `npm run i18n`을 실행하세요.
-// ko.ts sha256: 3be3631ca5924e73
+// ko.ts sha256: 4f9205b3ca77c078
 import type { ko } from "./ko";
 
 export const ja: typeof ko = {
@@ -11,10 +11,6 @@ export const ja: typeof ko = {
     close: "閉じる",
     cancel: "キャンセル",
     translationUnavailable: "翻訳サービスに接続できず、原文（韓国語）で表示しています。",
-    timeAgo: {
-      justNow: "先ほど",
-      minutesAgo: (n: number) => `${n}分前`,
-    },
     lastUpdated: (value: string) => `最終更新 · ${value}`,
   },
   nav: {
@@ -26,7 +22,6 @@ export const ja: typeof ko = {
   },
   home: {
     quickMenu: {
-      coursePlan: "カスタムコース",
       aiGuide: "AIガイド",
       schedule: "フルスケジュール",
       map: "地図・施設",
@@ -42,7 +37,6 @@ export const ja: typeof ko = {
     greetingAfternoon: "楽しい午後です。",
     greetingEvening: "活気のある夜です。",
     greetingSuffix: "、訪問者",
-    festivalLoading: "祭り情報を読み込んでいます...",
     aiCta: "AIに今日コースを推薦する",
     congestionTitle: "リアルタイムの混雑度",
     mapLink: "地図を見る",
@@ -52,7 +46,6 @@ export const ja: typeof ko = {
   map: {
     title: "デジタル地図・施設情報",
     subtitle: "登録されたフェスティバルブース、便利な施設、交通情報を確認してください",
-    mockBadge: "マップモックアップ（デモ画像）",
     tabs: { facility: "便宜施設", crowd: "混雑度", transport: "交通" },
     transportNotice: "交通情報は外部交通API連動前であり参考用案内です。",
     facilityOpen: "運転中",
@@ -73,15 +66,8 @@ export const ja: typeof ko = {
     title: "地域商券クーポン・ポイント",
     subtitle: "フェスティバルエンゲージメントクーポンを発行してESGポイントを確認してください",
     pointsLabel: "私のESGポイント",
-    pointsHelper: (n: number) => `獲得履歴${n}件`,
-    availableTitle: "発行可能なクーポン",
-    availableEmpty: "今発行可能なクーポンがありません。",
-    myTitle: "私のクーポン",
-    myEmpty: "発行されたクーポンはありません。",
-    issueButton: "発行を受ける",
     remaining: (n: number) => `${n}章残り`,
     validUntil: (date: string) => `${date}まで`,
-    redeemNotice: "クーポンは店頭でスタッフが確認後に使用処理します。",
     status: { ISSUED: "利用可能", REDEEMED: "使用完了", EXPIRED: "期間の有効期限", CANCELLED: "キャンセル済み" } as Record<string, string>,
   },
   nearby: {
@@ -150,9 +136,6 @@ export const ja: typeof ko = {
     subtitle: "承認された公式プログラムのスケジュールです。",
   },
   stampTour: {
-    couponsTitle: "地域商圏デジタルクーポン",
-    couponsLink: "クーポンボックスを開く",
-    emptyCoupons: "まだ発行されたクーポンはありません。クーポンボックスで発行してください。",
     title: "スタンプツアー",
     subtitle: "スタンプを集めるとESGポイントが積み上げられます。",
     collectionSubLabel: "スタンプの収集",
@@ -163,9 +146,6 @@ export const ja: typeof ko = {
     scanButton: "QRスキャン",
     scanHint: "現場案内板のQRを照らすとスタンプが押されます。カメラが使えない場合は、案内板のコードを直接入力してください。",
     codeLabel: "スタンプコード直接入力",
-    pointsTitle: "獲得ポイント",
-    pointsBalance: "現在の残高",
-    pointsEmpty: "まだ積立履歴がありません。",
     pointsLabel: "私のESGポイント",
     pointsHistoryLink: "獲得履歴",
     collectedCount: (collected: number, total: number) => `${collected}/${total}完了`,
@@ -242,18 +222,9 @@ export const ja: typeof ko = {
   kioskAssist: {
     consentTitle: "画面の文字を大幅に調整しますか？",
     consentDescription: "カメラでしばらく確認して、適切な文字サイズを提案します。使用しなくてもすべての機能をそのまま利用できます。",
-    consentAccept: "カメラで確認",
     consentDecline: "大丈夫です、ちょうど利用します。",
-    manualLargeText: "まさに大きな文字で",
     checking: "確認中…",
-    noticeOnDevice: "確認はこのキオスクの中でのみ行われ、写真は外に出ません。",
-    noticeDiscard: "映像と顔情報は保存せず、確認直後に消去します。",
-    noticeNoIdentity: "誰かは確認せず、価格や利用資格にも使わないですよ。",
-    noticeOptional: "カメラを書かなくても下のボタンで大きな文字を入れることができます。",
-    suggestTitle: "大きな文字で見てみますか？",
-    suggestDescription: "文字とボタンをより大きく見せてください。今画面そのままにしても大丈夫です。",
     suggestAccept: "大きな文字で見る",
-    suggestDecline: "今これがいい",
   },
   complaint: {
     ariaLabel: "苦情提出",
@@ -289,23 +260,12 @@ export const ja: typeof ko = {
     reservationCallTitle: "予約呼び出し",
     reservationCallLink: "予約履歴を見る",
     ticketCall: (n: number) => `${n}番、入場する番です`,
-    locationSuffix: "で番号表を見せてください。",
     emptyReservationCalls: "現在呼び出された予約はありません。",
     noticesTitle: "お知らせ",
     emptyNotices: "現在公開されているお知らせはありません。",
     fallbackTicketLabel: "予約",
     emergencyBadge: "緊急",
     emergencyDismissAria: "緊急通知を閉じる",
-  },
-  congestion: {
-    level: {
-      여유: "余裕",
-      보통: "通常",
-      혼잡: "混雑",
-    } as Record<string, string>,
-    avgWait: (n: number) => `平均待機${n}分`,
-    noWait: "待機なし",
-    updatedPrefix: "更新 ",
   },
   aiGuide: {
     answerFreshness: (value: string) => `案内基準・${value}`,
@@ -321,7 +281,6 @@ export const ja: typeof ko = {
     imageAlt: "Alan AIフェスティバルガイドデジタルヒューマン例",
     voiceReadyBadge: "音声ガイダンス準備済み",
     resetAria: "会話の更新",
-    recognizedQuestionPrefix: "認識された質問 ",
     assistantLabel: "Alan AI",
     sourcePrefix: "ソース・ ",
     micStopAria: "音声認識の停止",
@@ -354,15 +313,6 @@ export const ja: typeof ko = {
     reportDone: "レビューをリクエストしました",
     reportFailed: "届出を受け付けませんでした。",
     replies: {
-      congestion: (zone: string, minutes: number) =>
-        `現在${zone}が最も混雑しています。平均待機は${minutes}分です。`,
-      congestionSource: "リアルタイム混雑度データ",
-      transportLine: (mode: string, label: string, status: string) => `${mode} · ${label} (${status})`,
-      transportSource: "運営承認交通情報",
-      facilityLine: (name: string, location: string, minutes: number) => `${name}・${location}、徒歩${minutes}分`,
-      facilitySource: "施設承認データ",
-      scheduleLine: (time: string, title: string, stage: string) => `${time} · ${title} (${stage})`,
-      scheduleSource: "承認された祭りプログラムスケジュール",
       fallback: "以下の予想される質問を選択すると、祭りの運営データに基づいてすぐにご案内いたします。",
     },
     errors: {
@@ -394,16 +344,8 @@ export const ja: typeof ko = {
     issueFailed: "クーポンを発行できませんでした。",
     qrAlt: (store: string) => `${store}クーポンを使用するQRコード`,
     qrHelper: "店舗スタッフにQRを見せてください。認識されない場合は、以下のコードを教えてください。",
-    redeemAction: "使用処理",
-    redeemPending: "処理中…",
-    redeemFailed: "使用処理に失敗しました。",
-    redeemConfirmTitle: "クーポンを使用して処理しますか？",
-    redeemConfirmDescription: "店舗スタッフ確認後押してください。使用処理すると元に戻せません。",
-    redeemConfirmAction: "使用を処理する",
-    usedAtLine: (value: string) => `${value}使用完了`,
     expiredLine: "使用期間が過ぎたクーポンです。",
     expiresLine: (date: string) => `${date}まで利用可能`,
-    offerMeta: (location: string, expires: string) => `${location}・${expires}まで`,
     status: {
       ISSUED: "利用可能",
       REDEEMED: "使用完了",
@@ -516,39 +458,6 @@ export const ja: typeof ko = {
       empty: "まだ積立内訳がありません。",
       reusableReason: (rentalCode: string) => `多用途容器の返却 · ${rentalCode}`,
     },
-  },
-  coursePlan: {
-    title: "カスタムコースおすすめ",
-    subtitle: "同行・関心事・滞在時間に合わせて承認されたプログラムでコースを絞りましょう。",
-    visitorTypeLabel: "誰と来ましたか？",
-    visitorTypes: {
-      solo: "一人で",
-      couple: "恋人",
-      friends: "友達",
-      family: "家族",
-      senior: "大人同伴",
-    } as Record<string, string>,
-    interestLabel: "興味のあるもの（複数の犬を選択）",
-    interests: {
-      performance: "パフォーマンス",
-      experience: "体験",
-      exhibition: "展示",
-      food: "フード",
-      esg: "環境にやさしい・ESG",
-    } as Record<string, string>,
-    interestRequired: "興味を1つ以上選択してください。",
-    stayMinutesLabel: "滞在する時間",
-    stayMinutesOption: (minutes: number) => (minutes >= 60 ? `${minutes / 60}時間` : `${minutes}分`),
-    accessibilityLabel: "移動弱者のケアコース",
-    accessibilityHelper: "傾斜・階段の少ない銅線で案内します。",
-    submit: "コースおすすめを受ける",
-    submitting: "コースを組んでいます…",
-    failed: "コースをお勧めできませんでした。",
-    resultTitle: "おすすめコース",
-    totalMinutes: (minutes: number) => `合計${minutes}分`,
-    generatedAt: (value: string) => `推奨基準 · ${value}`,
-    stopMinutes: (minutes: number) => `${minutes}分`,
-    emptyResult: "条件に合ったコースが見つかりませんでした。条件を変えてもう一度お試しください。",
   },
   festivalData: {
     category: {
